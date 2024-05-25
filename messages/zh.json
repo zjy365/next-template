@@ -1,0 +1,6 @@
+{
+  "Header": {
+    "description": "基于 Next.js 14+ 的入门模板，包含应用程序路由器、shadcn/ui、类型安全环境变量、图标和配置设置，以及支持 next-intl 国际化。非常适合快速启动和开发现代 Web 应用程序。",
+    "title": "Next 模板"
+  }
+}

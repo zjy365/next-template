@@ -1,0 +1,6 @@
+{
+  "Header": {
+    "description": "Eine Startvorlage basierend auf Next.js 14+, mit App-Router, shadcn/ui, typensicheren Umgebungsvariablen, Icons und Konfigurationseinrichtung sowie Unterstützung für die internationale Lokalisierung mit next-intl. Ideal zum schnellen Start und zur Entwicklung moderner Webanwendungen.",
+    "title": "Next Template"
+  }
+}

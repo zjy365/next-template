@@ -1,0 +1,6 @@
+{
+  "Header": {
+    "description": "A starter template based on Next.js 14+, featuring app router, shadcn/ui, type-safe environment variables, icons and config setup, and support for next-intl internationalization. Ideal for quickly starting and developing modern web applications.",
+    "title": "Next Template"
+  }
+}
