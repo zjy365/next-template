@@ -1,5 +1,5 @@
 import { siteConfig } from '@/config/site';
-
+import { Link } from '@/navigation';
 import React from 'react';
 
 const HeaderLinks = () => {
@@ -7,8 +7,7 @@ const HeaderLinks = () => {
 
   return (
     <div className="flex flex-row items-center gap-6">
-      123
-      {/* {links.map((link, index) => (
+      {links.map((link, index) => (
         <Link
           key={link.name}
           href={link.href}
@@ -19,7 +18,7 @@ const HeaderLinks = () => {
           {link.icon &&
             React.createElement(link.icon, { className: 'text-lg' })}
         </Link>
-      ))} */}
+      ))}
     </div>
   );
 };

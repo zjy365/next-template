@@ -1,0 +1,6 @@
+{
+  "Header": {
+    "description": "Una plantilla de inicio basada en Next.js 14+, que incluye enrutador de la aplicación, shadcn/ui, variables de entorno seguras, iconos y configuración, y soporte para internacionalización con next-intl. Ideal para comenzar y desarrollar rápidamente aplicaciones web modernas.",
+    "title": "Plantilla de Next"
+  }
+}

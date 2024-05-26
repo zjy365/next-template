@@ -4,10 +4,10 @@ import { LangSwitcher } from '@/components/header/lang-switcher';
 import { siteConfig } from '@/config/site';
 import { MenuIcon } from 'lucide-react';
 import Image from 'next/image';
-
 import { useState } from 'react';
 import { Icons } from '../icons';
 import { ThemedButton } from '../themed-button';
+import { Link } from '@/navigation';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -15,7 +15,7 @@ const Header = () => {
     <header className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
       <nav className="relative z-50 flex justify-between">
         <div className="flex items-center md:gap-x-12">
-          {/* <Link
+          <Link
             href="/"
             aria-label={siteConfig.name}
             title={siteConfig.name}
@@ -29,7 +29,7 @@ const Header = () => {
               height={32}
             />
             <span className="hidden md:block">{siteConfig.name}</span>
-          </Link> */}
+          </Link>
         </div>
         <div className="hidden items-center gap-x-6 md:flex">
           <HeaderLinks />
@@ -50,7 +50,7 @@ const Header = () => {
               <div className="rounded border bg-background p-5 shadow-sm">
                 <div className="mb-4 flex items-center justify-between">
                   <div>
-                    {/* <Link
+                    <Link
                       href="/"
                       aria-label={siteConfig.name}
                       title={siteConfig.name}
@@ -66,7 +66,7 @@ const Header = () => {
                       <span className="ml-2 text-xl font-bold tracking-wide text-gray-950 dark:text-gray-300">
                         {siteConfig.name}
                       </span>
-                    </Link> */}
+                    </Link>
                   </div>
                   <div>
                     <button
