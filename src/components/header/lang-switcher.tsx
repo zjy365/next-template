@@ -20,14 +20,19 @@ export const LangSwitcher = () => {
 
   return (
     <Select value={locale} onValueChange={handleSwitchLanguage}>
-      <SelectTrigger className="w-fit">
+      <SelectTrigger aria-label="select language" className="w-fit">
         <SelectValue placeholder="Language" />
       </SelectTrigger>
       <SelectContent>
         {Object.keys(localeNames).map((key: string) => {
           const name = localeNames[key];
           return (
-            <SelectItem className="cursor-pointer" key={key} value={key}>
+            <SelectItem
+              aria-label={key}
+              className="cursor-pointer"
+              key={key}
+              value={key}
+            >
               {name}
             </SelectItem>
           );
