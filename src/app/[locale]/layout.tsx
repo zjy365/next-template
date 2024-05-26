@@ -62,10 +62,6 @@ export const viewport: Viewport = {
   ],
 };
 
-export function generateStaticParams() {
-  return locales.map((locale) => ({ locale }));
-}
-
 type Props = {
   children: ReactNode;
   params: { locale: string };
