@@ -26,5 +26,5 @@ export const siteConfig: SiteConfig = {
   links: {
     github: OPEN_SOURCE_URL,
   },
-  ogImage: `${env.NEXT_PUBLIC_APP_URL}/og.png?${new Date()}`,
+  ogImage: `${env.NEXT_PUBLIC_APP_URL}/og.png?${new Date().getTime()}`,
 };

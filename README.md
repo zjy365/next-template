@@ -1,36 +1,80 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<a href="https://next-template-fast.vercel.app/">
+<img src="./public/og.png" alt="thubnail">
+</a>
+<p align="center">
+  <a href="./README.md">English</a> | 
+  <a href="./README_zh.md">简体中文</a> 
+</p>
 
-## Getting Started
+<p align="center">
+  <a href="#-Introduction"><strong>Introduction</strong></a> ·
+  <a href="#-Features"><strong>Features</strong></a> ·
+  <a href="#-Deployment"><strong>Deployment</strong></a> ·
+  <a href="#-Contribution"><strong>Contribution</strong></a> ·
+  <a href="#%EF%B8%8F-support"><strong>Support</strong></a>
+</p>
 
-First, run the development server:
+## 📖 Introduction
+
+A starter template based on Next.js 14+, featuring app router, shadcn/ui, type-safe environment variables, icons and config setup, and support for next-intl internationalization. Ideal for quickly starting and developing modern web applications.
+
+## 🎉 Features
+
+- Next.js 14 (App router)
+- React 18
+- Typescript
+- TailwindCSS
+- Shadcn/ui
+- next-intl - Internationalization for Next.js
+- Zod - Schema validation library
+- Prettier - Code formatter
+- Eslint - Code linting tool
+- Husky & Lint Staged
+- Icons - From Lucide
+- Dark mode - With next-themes
+- Sitemap & robots.txt - With next-sitemap
+- T3-env - Manage your environment variables
+- Perfect Lighthouse score
+
+## 🚀 Deployment
+
+You can deploy this template to Vercel with the button below:
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fzjy365%2Fnext-template)
+
+You can also clone & create this repo locally with the following command:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npx create-next-app -e https://github.com/zjy365/next-template my-project-name
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. Install dependencies
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+pnpm i
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+2. Set up environment variables
+   Create `.env` file and set env variables from `.env.example` file.
 
-## Learn More
+3. You can start the server using this command:
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+pnpm dev
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+4. open http://localhost:3000/ to see this app.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## 🤝 Contribution
 
-## Deploy on Vercel
+To contribute, please follow these steps:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Fork the repository.
+2. Create a new branch.
+3. Make your changes, and commit them.
+4. Push your changes to the forked repository.
+5. Create a pull request.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## ❤️ Support
+
+If you liked the project, I will appreciate if you leave a star. 🌟😊
