@@ -5,7 +5,7 @@ import { notFound } from 'next/navigation';
 
 export const locales = ['en', 'zh', 'ja', 'ar', 'es', 'ru'] as const;
 
-export const localePrefix = undefined;
+export const localePrefix = 'as-needed';
 
 export const localeNames: any = {
   en: '🇺🇸 English',
