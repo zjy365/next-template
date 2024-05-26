@@ -1,5 +1,8 @@
-import { SiteConfig } from '@/types';
+import { Icons } from '@/components/icons';
 import { env } from '@/env.mjs';
+import { SiteConfig } from '@/types';
+
+export const OPEN_SOURCE_URL = 'https://github.com/zjy365/next-template';
 
 export const siteConfig: SiteConfig = {
   name: 'Next Template',
@@ -19,8 +22,9 @@ export const siteConfig: SiteConfig = {
     base: env.NEXT_PUBLIC_APP_URL,
     author: 'https://github.com/zjy365',
   },
+  headerLinks: [{ name: 'repo', href: OPEN_SOURCE_URL, icon: Icons.github }],
   links: {
-    github: 'https://github.com/zjy365/next-template',
+    github: OPEN_SOURCE_URL,
   },
-  ogImage: `${env.NEXT_PUBLIC_APP_URL}/og.jpg`,
+  ogImage: `${env.NEXT_PUBLIC_APP_URL}/og.png?${new Date()}`,
 };

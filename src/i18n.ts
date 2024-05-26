@@ -1,8 +1,28 @@
 import { IntlErrorCode } from 'next-intl';
+import { Pathnames } from 'next-intl/navigation';
 import { getRequestConfig } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 
-export const locales = ['en', 'de', 'zh'] as const;
+export const locales = ['en', 'zh'] as const;
+
+export const localePrefix = undefined;
+
+export const localeNames: any = {
+  en: '🇺🇸 English',
+  zh: '🇨🇳 中文',
+  // ja: '🇯🇵 日本語',
+  // ar: '🇸🇦 العربية',
+  // es: '🇪🇸 Español',
+  // ru: '🇷🇺 Русский',
+};
+
+export const pathnames = {
+  '/': '/',
+  '/pathnames': {
+    en: '/pathnames',
+    zh: '/pathnames',
+  },
+} satisfies Pathnames<typeof locales>;
 
 export const defaultLocale = 'en' as const;
 

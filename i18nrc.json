@@ -3,8 +3,6 @@
   "entryLocale": "en",
   "output": "./messages/",
   "outputLocales": [
-    "en",
-    "zh",
-    "de"
+    "zh"
   ]
 }
