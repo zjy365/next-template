@@ -78,7 +78,7 @@ export default async function RootLayout({
       <head />
       <body
         className={cn(
-          'min-h-screen bg-background antialiased',
+          'h-full min-h-screen w-full bg-background antialiased',
           inter.className,
         )}
       >

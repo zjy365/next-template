@@ -2,18 +2,24 @@
 import HeaderLinks from '@/components/header/header-links';
 import { LangSwitcher } from '@/components/header/lang-switcher';
 import { siteConfig } from '@/config/site';
+import { Link } from '@/navigation';
+import { motion } from 'framer-motion';
 import { MenuIcon } from 'lucide-react';
 import Image from 'next/image';
 import { useState } from 'react';
 import { Icons } from '../icons';
 import { ThemedButton } from '../themed-button';
-import { Link } from '@/navigation';
 
-const Header = () => {
+export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
-    <header className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
-      <nav className="relative z-50 flex justify-between">
+    <motion.div
+      initial={{ y: -100 }}
+      animate={{ y: 0 }}
+      className="fixed top-6 z-10 w-full"
+    >
+      <nav className="relative mx-auto  flex max-w-7xl justify-between px-4 py-2 sm:px-6 lg:px-8">
         <div className="flex items-center md:gap-x-12">
           <Link
             href="/"
@@ -36,6 +42,7 @@ const Header = () => {
           <ThemedButton />
           <LangSwitcher />
         </div>
+
         <div className="md:hidden">
           <button
             aria-label="Open Menu"
@@ -94,8 +101,6 @@ const Header = () => {
           )}
         </div>
       </nav>
-    </header>
+    </motion.div>
   );
-};
-
-export default Header;
+}
