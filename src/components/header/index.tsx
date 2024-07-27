@@ -25,7 +25,7 @@ export default function Header() {
       initial={{ y: -80 }}
       animate={{ y: 0 }}
       className={cn(
-        'fixed top-0 z-10 w-full',
+        'fixed top-0 z-50 w-full',
         hasScrolled ? 'bg-neutral-50 shadow-lg dark:bg-neutral-900' : '',
       )}
     >

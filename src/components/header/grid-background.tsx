@@ -110,9 +110,13 @@ const AnimatedBox = ({
   );
 };
 
-export const GridBackground = () => {
-  const gridRows = 9;
-  const gridColumns = 8;
+export const GridBackground = ({
+  gridRows = 8,
+  gridColumns = 8,
+}: {
+  gridRows?: number;
+  gridColumns?: number;
+}) => {
   const rows = [];
 
   for (let i = 0; i < gridRows; i++) {

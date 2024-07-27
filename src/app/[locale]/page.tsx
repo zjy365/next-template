@@ -1,4 +1,6 @@
-import { FeaturesSection } from '@/components/feature';
+import { Features } from '@/components/feature';
+import { Feedbacks } from '@/components/feature/feedback';
+import { ReadyCard } from '@/components/feature/ready-card';
 import Footer from '@/components/footer';
 import Header from '@/components/header';
 import { GridBackground } from '@/components/header/grid-background';
@@ -47,7 +49,9 @@ export default function Home() {
               />
             </div>
           </div>
-          <FeaturesSection />
+          <Features />
+          <Feedbacks />
+          <ReadyCard />
           <Footer />
         </div>
       </div>
