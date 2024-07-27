@@ -1,7 +1,6 @@
 import { TailwindIndicator } from '@/components/tailwind-indicator';
 import { ThemeProvider } from '@/components/theme-provider';
 import { siteConfig } from '@/config/site';
-import { locales } from '@/i18n';
 import { cn } from '@/lib/utils';
 import '@/styles/globals.css';
 import type { Metadata, Viewport } from 'next';

@@ -1,0 +1,7 @@
+.stop-light {
+  stop-color: rgba(224, 224, 224, 0.3);
+}
+
+.stop-dark {
+  stop-color: rgba(70, 70, 70, 0.3);
+}

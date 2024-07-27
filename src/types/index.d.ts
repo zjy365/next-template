@@ -9,6 +9,7 @@ export type SiteConfig = {
   };
   links: {
     github: string;
+    twitter: string;
   };
   headerLinks: { name: string; href: string; icon: React.ElementType }[];
   ogImage: string;

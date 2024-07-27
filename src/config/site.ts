@@ -25,6 +25,7 @@ export const siteConfig: SiteConfig = {
   headerLinks: [{ name: 'repo', href: OPEN_SOURCE_URL, icon: Icons.github }],
   links: {
     github: OPEN_SOURCE_URL,
+    twitter: 'https://twitter.com/zjy365',
   },
   ogImage: `${env.NEXT_PUBLIC_APP_URL}/og.png?${new Date().getTime()}`,
 };
