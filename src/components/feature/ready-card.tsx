@@ -6,17 +6,15 @@ import { buttonVariants } from '../ui/button';
 
 export function ReadyCard() {
   return (
-    <div className="container relative py-60">
+    <div className="container relative py-36">
       <GridBackground gridRows={5} />
       <div className="relative z-10">
         <div
-          className="flex h-[380px] w-full cursor-pointer flex-col items-center justify-center rounded-xl border border-gray-950/[.1] bg-gray-950/5 
-                      p-5 py-20
-                      transition-all 
-                      duration-300
-                      dark:border-gray-50/[.1] dark:bg-gray-50/[.10]"
+          className={cn(
+            'py-20transition-all flex h-[380px] w-full cursor-pointer flex-col items-center justify-center rounded-xl border border-gray-950/[.1] bg-gray-950/90 p-5 duration-300 dark:border-gray-50/[.1] dark:bg-gray-50',
+          )}
         >
-          <h2 className="mb-3 text-center text-3xl font-bold text-gray-800 dark:text-white">
+          <h2 className="mb-3 text-center text-3xl font-bold text-white dark:text-black">
             Ready to explore?
           </h2>
           <div className="mt-10 flex justify-center">

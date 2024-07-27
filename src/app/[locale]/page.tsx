@@ -51,7 +51,7 @@ export default function Home() {
           </div>
           <Features />
           <Feedbacks />
-          <ReadyCard />
+          {/* <ReadyCard /> */}
           <Footer />
         </div>
       </div>
