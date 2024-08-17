@@ -4,6 +4,7 @@ import { ReadyCard } from '@/components/feature/ready-card';
 import Footer from '@/components/footer';
 import Header from '@/components/header';
 import { GridBackground } from '@/components/header/grid-background';
+import PricingComponent from '@/components/price';
 import { buttonVariants } from '@/components/ui/button';
 import { siteConfig } from '@/config/site';
 import { cn } from '@/lib/utils';
@@ -50,6 +51,7 @@ export default function Home() {
             </div>
           </div>
           <Features />
+          <PricingComponent />
           <Feedbacks />
           {/* <ReadyCard /> */}
           <Footer />
