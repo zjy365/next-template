@@ -21,9 +21,7 @@ export default function Header() {
   });
 
   return (
-    <motion.div
-      initial={{ y: -80 }}
-      animate={{ y: 0 }}
+    <div
       className={cn(
         'fixed top-0 z-50 w-full',
         hasScrolled ? 'bg-neutral-50 shadow-lg dark:bg-neutral-900' : '',
@@ -116,6 +114,6 @@ export default function Header() {
           </div>
         </div>
       </nav>
-    </motion.div>
+    </div>
   );
 }

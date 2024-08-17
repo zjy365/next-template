@@ -73,7 +73,7 @@ const PricingComponent: React.FC = () => {
   }));
 
   return (
-    <div className="bg-white py-24 dark:bg-gray-900 sm:py-32">
+    <div className="py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-4xl text-center">
           <h1 className="mx-auto max-w-5xl text-center text-3xl font-medium tracking-tight text-black dark:text-white md:text-5xl md:leading-tight">
@@ -101,7 +101,7 @@ const PricingComponent: React.FC = () => {
               className={`rounded-2xl p-8 ring-1 ${
                 tier.highlight
                   ? 'bg-gray-900 ring-gray-900 dark:bg-gray-800 dark:ring-gray-800'
-                  : 'ring-gray-200 dark:bg-gray-800 dark:ring-gray-700'
+                  : 'ring-gray-200 dark:bg-gray-50/10 dark:ring-gray-50/10'
               }`}
             >
               <h2
